@@ -1,12 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #A0BC6C;
 }
 
 header {
-    background-color: #333;
+    background-color: #3F0909;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -18,4 +18,17 @@ section {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for the navbar elements */
+nav a {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 1em; /*, 1em;*/
+    /*margin: 0.5em;*/
+    border: 3px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: beige;
 }

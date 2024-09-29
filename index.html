@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neiro Cabrera</title>
-    <!--
-    <link rel="stylesheet" href="styles.css">
-    -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <a class="About Me" href="#">About Me</a>
-        <a class="Projects" href="#">Projects</a>
-        <a class="Contact Me" href="#">Contact Me</a>
+        <a class="About Me" href="#About Me">About Me</a>
+        <a class="Projects" href="#Projects">Projects</a>
+        <a class="Contact Me" href="#Contact Me">Contact Me</a>
     </nav>
     <header>
         <h1>Hello, I'm Neiro Cabrera!</h1>
     </header>
     <section>
-        <h2>About Me</h2>
+        <h2 id="About Me">About Me</h2>
         <p>
             Hello, my name is Neiro Cabrera and I am an aspiring Software Engineer and Computer Science Major at UCLA. 
             I have experience working on Full Stack Development and Internet of Things as evidenced by my projects. 
@@ -30,12 +27,36 @@
         </p>
     </section>
     <section>
-        <h2>Projects</h2>
-        <p>Showcase your projects here.</p>
+        <h2 id="Projects">Projects</h2>
+        <a href="https://github.com/neiroc-02/IIOT-4.0-Project">
+            <h3>IIOT 4.0 Project</h3>
+        </a>
+            <p>
+                This project's purpose is to bring exposure to concepts regarding Fourth Industrial Revolution and Industry 4.0 at minimal cost. 
+                This is specifically designed for demonstrations at the High School level and more in depth training at the college level. 
+                Additionally, the demo serves as a great starting point for anyone interested in learning on a functioning prototype.   
+            </p>
+
+        <h3>UCLA Geoguessr</h3>
+        <p></p>
+        <h3>Utils in Rust</h3>
+        <p></p>
+        <h3>Proxy Herd</h3>
+        <p></p>
     </section>
     <section>
-        <h2>Contact Me</h2>
-        <p> Work in Progress</p>
+        <h2 id="Contact Me">Contact Me</h2>
+        <form action="mailto:neirocabrera7@gmail.com" method="post" enctype="text/plain"></form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
     </section>
 </body>
 </html>

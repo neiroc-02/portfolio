@@ -3,60 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neiro Cabrera</title>
+    <title>Neiro Cabrera - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <a class="About Me" href="#About Me">About Me</a>
-        <a class="Projects" href="#Projects">Projects</a>
-        <a class="Contact Me" href="#Contact Me">Contact Me</a>
+        <div class="nav-content">
+            <div class="logo">NC</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <header>
-        <h1>Hello, I'm Neiro Cabrera!</h1>
-    </header>
-    <section>
-        <h2 id="About Me">About Me</h2>
-        <p>
-            Hello, my name is Neiro Cabrera and I am an aspiring Software Engineer and Computer Science Major at UCLA. 
-            I have experience working on Full Stack Development and Internet of Things as evidenced by my projects. 
-            I have interest in gaining an entry-level software job in those fields or expanding my knowledge in Security or Embedded Systems. 
-            In end, I really enjoy learning and being adaptable to learn new skills quickly. 
-            I believe teamwork and communication are important in any collaborative project I do and would plan to apply those skills in industry when I get my first entry level position. 
-            Reach out to me through my email (neirocabrera7@gmail.com) if there are any opportunities I can get involved in!
-        </p>
-    </section>
-    <section>
-        <h2 id="Projects">Projects</h2>
-        <a href="https://github.com/neiroc-02/IIOT-4.0-Project">
-            <h3>IIOT 4.0 Project</h3>
-        </a>
-            <p>
-                This project's purpose is to bring exposure to concepts regarding Fourth Industrial Revolution and Industry 4.0 at minimal cost. 
-                This is specifically designed for demonstrations at the High School level and more in depth training at the college level. 
-                Additionally, the demo serves as a great starting point for anyone interested in learning on a functioning prototype.   
-            </p>
 
-        <h3>UCLA Geoguessr</h3>
-        <p></p>
-        <h3>Utils in Rust</h3>
-        <p></p>
-        <h3>Proxy Herd</h3>
-        <p></p>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="assets/profile.jpeg" alt="Neiro Cabrera" class="profile-image">
+            </div>
+            <h1>Neiro Cabrera</h1>
+            <p class="tagline">Software Engineer & Computer Science Student at UCLA</p>
+            <div class="social-links">
+                <a href="https://github.com/neiroc-02" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/neiro-cabrera" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:neirocabrera7@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello, my name is Neiro Cabrera and I am an aspiring Software Engineer and Computer Science Major at UCLA. 
+                        I have experience working on Full Stack Development and Internet of Things as evidenced by my projects. 
+                        I have interest in gaining an entry-level software job in those fields or expanding my knowledge in Security or Embedded Systems. 
+                        In end, I really enjoy learning and being adaptable to learn new skills quickly. 
+                        I believe teamwork and communication are important in any collaborative project I do and would plan to apply those skills in industry when I get my first entry level position.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li>Back End Development</li>
+                        <li>Embedded Systems</li>
+                        <li>Internet of Things</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2 id="Contact Me">Contact Me</h2>
-        <form action="mailto:neirocabrera7@gmail.com" method="post" enctype="text/plain"></form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-        
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            <input type="submit" value="Send">
-        </form>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <a href="https://github.com/neiroc-02/event_handler" class="experience-card">
+                    <h3>R&D Software Engineering Intern</h3>
+                    <p class="company">UCLA SSysArch Lab</p>
+                    <p class="date">December 2024 - Present</p>
+                    <ul class="experience-list">
+                        <li>Engineered a Django REST API for three collaborating companies enabling efficient analysis of anomalies
+within manufacturing pipelines and allowing ranged query access of security warnings</li>
+                        <li>Researched TEE environments for NVIDIA Jetson Boards, debugging software with a UART serial terminal</li>
+                    </ul>
+                </a>
+                <a href="https://github.com/neiroc-02/IIOT-4.0-Project" class="experience-card">
+                    <h3>R&D Software Engineering Intern</h3>
+                    <p class="company">Clovis Community College</p>
+                    <p class="date">January 2023 - September 2023</p>
+                    <ul class="experience-list">
+                        <li>Migrated PLC-based training system to utilize Raspberry Pis and Arduinos, lowering costs by 50%</li>
+                        <li>Utilized multi-threading to develop a GUI that displays data from 30 ESP32s, reducing latency by 60%</li>
+                        <li>Automated training system installation and booting with Bash scripting, decreasing setup time by 40%</li>
+                        <li>Demoed training system to 10 local instructors, implementing feedback to improve use experience</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
     </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <a href="https://github.com/neiroc-02/soles-racing-24-25" class="project-card" target="_blank">
+                    <h3>IoT RaceCar</h3>
+                    <ul>
+                        <li>Upgraded remote control car framework to an IoT system, improving sensor tracking of car components</li>
+                        <li>Implemented MQTT communication to help display plots of 3 sensored for improved monitoring</li>
+                        <li>Led the Electronics team with 10+ members, mentoring new students and distributing tasks in meetings</li>
+                    </ul>
+                </a>
+                <a href="https://github.com/QuinnHilger/Pointed" class="project-card" target="_blank">
+                    <h3>Pointed</h3>
+                    <ul>
+                        <li>Developed 15 Supabase queries to manage league invites and requests for both private and public leagues</li>
+                        <li>Designed intuitive React frontend pages for league invites, fostering an engaging user experience</li>
+                        <li>Maintained a design document with UML, API, and tech stack specfications for a 6 developer team</li>
+                    </ul>
+                </a>
+                <a href="https://github.com/mrElnekave/USEELA" class="project-card" target="_blank">
+                    <h3>UCLA Geoguessr</h3>
+                    <ul>
+                        <li>Organized a MERN application with back end tools such as authentication, quiz storage, and score tracking</li>
+                        <li>Tested MongoDB crud APIs with Postman to test user creation and access using 20 test users</li>
+                        <li>Collaborate in a team of 4 developers, contributing ideas in weekly meetings and leading code reviews</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <form action="mailto:neirocabrera7@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Neiro Cabrera. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
